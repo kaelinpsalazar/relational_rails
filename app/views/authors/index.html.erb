@@ -1,7 +1,10 @@
 <h1>AUTHORS</h1>
 
-<% @authors.each do |author| %>
-  <p>Name: <%= author.name %></p>
-  <p>Age: <%= author.age %></p>
-  <p>Deceased: <%= author.deceased %></p>
+<h1>List of Authors</h1>
+
+<ul>
+  <% @authors.each do |author| %>
+    <li><%= author.name %></li>
   <% end %>
+</ul>
+
